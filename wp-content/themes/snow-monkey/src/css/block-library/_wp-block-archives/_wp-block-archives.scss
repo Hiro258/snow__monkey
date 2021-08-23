@@ -1,0 +1,4 @@
+.wp-block-archives {
+  @include widget-list-base();
+  margin-left: auto;
+}

@@ -1,0 +1,69 @@
+/* 任意のタクソノミーの投稿（リッチメディア）のスタイル */
+.c-entries--rich-media {
+    .c-entries__item {
+      &:nth-of-type(-n + 3) {
+        /* メディアの下に余白を増やす */
+        margin-bottom: 80px;
+      }
+  
+      .c-entry-summary {
+        &__figure {
+          /* border-leftを適応するためmarginを消す */
+          margin-bottom: 0;
+  
+          img {
+            /* 変化の時間 標準の装飾を除去 */
+            transition: transform 0.6s;
+            filter: none !important;
+          }
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-6 {
+          background-color: rgba(#cd162c, 0.8);
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-5 {
+          background-color: rgba(#104f96, 0.8);
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-7 {
+          background-color: rgba(#e97501, 0.8);
+        }
+  
+        &__body {
+          /* 見栄えを良くするため左側に余白をつける テキスト左側の縦線 */
+          padding-left: 30px;
+          border-left: 5px solid #cd162c;
+        }
+  
+        &__header {
+          /* c-entry-summary__figureでmarginを除去したので余白を埋め合わせ */
+          padding: 20px 0;
+        }
+  
+        &__content {
+          /* テキスト部分の装飾 */
+          color: #333;
+          font-size: 14px;
+          line-height: 2.25em;
+        }
+  
+        &__meta {
+          /* 投稿者・日時の除去 */
+          display: none;
+        }
+      }
+  
+      & a:hover {
+        .c-entry-summary__figure {
+          img {
+            /* ホバー時の画像拡大 */
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }

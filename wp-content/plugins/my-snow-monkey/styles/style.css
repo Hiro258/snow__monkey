@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/* フッターウィジェットエリア */
+.l-footer-widget-area {
+  /* ウィジェットエリアの上部にボーダーを入れるため、paddingを除去 */
+  border-top: 1px solid #ccc;
+  padding: 0;
+}
+
+.l-footer-widget-area .c-row {
+  /* 左右にボーダー */
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.l-footer-widget-area__item {
+  /* paddingを除去し、詰まったのでこちらで追加 */
+  padding: 40px;
+}
+
+.l-footer-widget-area__item:nth-of-type(n + 2) {
+  /* 最初の一つ目を除くブロックにボーダー */
+  border-left: 1px solid #ccc;
+}
+
+.l-footer-widget-area__item .c-widget__title {
+  /* タイトルを左寄せ */
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #cd162c;
+}
+
+.l-footer-widget-area__item .c-widget__title::before, .l-footer-widget-area__item .c-widget__title::after {
+  /* 左右のボーダーの除去 */
+  display: none;
+}
+
+/* フッターの上 */
+.info {
+  /* フッター上部にボーダー */
+  border-top: 1px solid #ccc;
+}
+
+.info-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1180px;
+  height: 130px;
+}
+
+.info__logo {
+  margin-right: 30px;
+}
+
+.info__logo img {
+  width: 150px;
+}
+
+.info__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+}
+
+.info .social-nav {
+  margin-left: 0;
+}
+
+.info .social-nav__icon {
+  display: inline;
+  margin: 0 10px;
+  list-style: none;
+}
+
+.info .social-nav__icon a {
+  color: #212121;
+}
+
+/* 任意のタクソノミーの投稿（リッチメディア）のスタイル */
+.c-entries--rich-media .c-entries__item:nth-of-type(-n + 3) {
+  /* メディアの下に余白を増やす */
+  margin-bottom: 80px;
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary {
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__figure {
+  /* border-leftを適応するためmarginを消す */
+  margin-bottom: 0;
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__figure img {
+  /* 変化の時間 標準の装飾を除去 */
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__term--category-6 {
+  background-color: rgba(205, 22, 44, 0.8);
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__term--category-5 {
+  background-color: rgba(16, 79, 150, 0.8);
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__term--category-7 {
+  background-color: rgba(233, 117, 1, 0.8);
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__body {
+  /* 見栄えを良くするため左側に余白をつける テキスト左側の縦線 */
+  padding-left: 30px;
+  border-left: 5px solid #cd162c;
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__header {
+  /* c-entry-summary__figureでmarginを除去したので余白を埋め合わせ */
+  padding: 20px 0;
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__content {
+  /* テキスト部分の装飾 */
+  color: #333;
+  font-size: 14px;
+  line-height: 2.25em;
+}
+
+.c-entries--rich-media .c-entries__item .c-entry-summary__meta {
+  /* 投稿者・日時の除去 */
+  display: none;
+}
+
+.c-entries--rich-media .c-entries__item a:hover .c-entry-summary__figure img {
+  /* ホバー時の画像拡大 */
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* 最近の投稿（テキスト）のスタイル */
+.c-entries--text {
+  position: relative;
+  background-color: #f9f9f9;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.c-entries--text .c-entries__item a {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+  /* 作成したカテゴリーIDによって末尾の番号が変わります */
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__title {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__figure {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 6em;
+  /* 日付の長さに合わせて調整 */
+  background-color: transparent;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__figure img, .c-entries--text .c-entries__item .c-entry-summary__figure::before {
+  display: none;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__figure span {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__term--category-7 {
+  color: #333;
+  border: 1px solid #333;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__term--category-4 {
+  color: #cd162c;
+  border: 1px solid #cd162c;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__term--category-5 {
+  color: #104f96;
+  border: 1px solid #104f96;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__term--category-3 {
+  color: #e97501;
+  border: 1px solid #e97501;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__term {
+  position: relative;
+  left: 0;
+  white-space: nowrap;
+}
+
+.c-entries--text .c-entries__item .c-entry-summary__meta {
+  margin-right: 10rem;
+  /* カテゴリー名の長さにあわせて調整 */
+}
+
+.c-entries--text .c-entries__item:hover .c-entry-summary__title {
+  color: #cd162c;
+}
+
+.btn .smb-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+  height: 60px;
+  margin-top: 60px;
+}
+
+/* ヘッダー */
+/* グローバルメニュー位置調整 */
+.l-header .c-navbar__item {
+  position: relative;
+}
+
+.l-header .c-navbar__item::after {
+  /* メニューアイテムの左に区切り線 */
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  height: 30px;
+  margin-top: -15px;
+  border-right: 1px solid #ccc;
+}
+
+.l-header .c-navbar__item:last-of-type::before {
+  /* 最後のメニューアイテムの右に区切り線 */
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  height: 30px;
+  margin-top: -15px;
+  border-right: 1px solid #ccc;
+}
+
+.swiper-slide {
+  /* 表示させる高さの調整 */
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.swiper-slide .main-visual {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 9s ease;
+  transition: -webkit-transform 9s ease;
+  transition: transform 9s ease;
+  transition: transform 9s ease, -webkit-transform 9s ease;
+}
+
+.swiper-slide-active .main-visual {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.swiper-slide-active .hero__title {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 1;
+}
+
+.swiper-slide-active .hero__btn {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 1;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero__title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  width: 90vw;
+  -webkit-transform: translate(-50%, 20px);
+          transform: translate(-50%, 20px);
+  -webkit-transition: opacity 1.2s ease 1.5s, -webkit-transform 1.2s ease 1.5s;
+  transition: opacity 1.2s ease 1.5s, -webkit-transform 1.2s ease 1.5s;
+  transition: opacity 1.2s ease 1.5s, transform 1.2s ease 1.5s;
+  transition: opacity 1.2s ease 1.5s, transform 1.2s ease 1.5s, -webkit-transform 1.2s ease 1.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.hero__title h2 {
+  font-size: 36px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+  line-height: 2em;
+}
+
+.hero__title span {
+  display: block;
+}
+
+.hero__btn {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transform: translate(-50%, 20px);
+          transform: translate(-50%, 20px);
+  -webkit-transition: opacity 1.2s ease 2.5s, -webkit-transform 1.2s ease 2.5s;
+  transition: opacity 1.2s ease 2.5s, -webkit-transform 1.2s ease 2.5s;
+  transition: opacity 1.2s ease 2.5s, transform 1.2s ease 2.5s;
+  transition: opacity 1.2s ease 2.5s, transform 1.2s ease 2.5s, -webkit-transform 1.2s ease 2.5s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.hero__btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-color: #cd162c;
+  text-decoration: none;
+  width: 240px;
+  height: 60px;
+}
+
+/* *****************************************************************
+
+Stylesheet: ベーススタイル（全て）に適応
+
+******************************************************************/
+/* 3枚並んだパネルの装飾 */
+.panels .c-row__col {
+  /* パネルの余白除去 */
+  padding: 0;
+}
+
+.panels .smb-panels__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  /* パネルホバー時の装飾 */
+}
+
+.panels .smb-panels__item__figure {
+  /* テキストと画像の位置変更 */
+  position: relative;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  overflow: hidden;
+}
+
+.panels .smb-panels__item__figure::before {
+  /* ホバー時の装飾 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: '新しい暮らしを始めたい方\Aのためのリフォーム\A\A老後のために暮らしやすい\Aバリアフリーの住宅\A\A未来を創造し作り上げられる\A Billion自慢の住宅設計';
+  white-space: pre;
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+  color: #fff;
+  font-size: 13px;
+  -webkit-transition: all 0.6s 70ms;
+  transition: all 0.6s 70ms;
+  opacity: 0;
+  z-index: 1;
+}
+
+.panels .smb-panels__item__figure img {
+  /* 変化の時間 */
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.panels .smb-panels__item__body {
+  /* パネルのボーダー部分 */
+  -webkit-box-shadow: 0 0 0 1px #ccc;
+          box-shadow: 0 0 0 1px #ccc;
+  /* パネルのテキストと画像の順序を変更*/
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.panels .smb-panels__item__title {
+  font-size: 24px;
+}
+
+.panels .smb-panels__item__content {
+  font-size: 14px;
+}
+
+.panels .smb-panels__item:hover .smb-panels__item__figure::before {
+  /* ホバー時に文字浮き出して見えるようにscaleで拡大 */
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  opacity: 1;
+}
+
+.panels .smb-panels__item:hover .smb-panels__item__figure img {
+  /* ホバー時に画像を拡大 */
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.smb-section__title {
+  /* セクションタイトルサイズ変更 */
+  font-size: 2.5em;
+}
+
+.smb-section__title::after {
+  /* 標準であるセクションタイトルの下線除去 */
+  display: none;
+}
+
+/* バナーの装飾 */
+.banners .smb-items__banner__figure {
+  /* デフォルトのfilterの除去 */
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+.banners .smb-items__banner__figure img {
+  /* 常時filterをかける */
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.banners .smb-items__banner__body {
+  /* 変化にかける時間 */
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.banners .smb-items__banner__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.banners .smb-items__banner__lede {
+  font-size: 16px;
+}
+
+.banners .smb-items__banner:hover .smb-items__banner__body {
+  /* ホバー時に文字を右に移動 */
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+/* TOPのパネル */
+.top-panel {
+  /* 位置調整 */
+  position: relative;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  z-index: 1;
+}
+
+.top-panel .smb-panels__item {
+  /* パネルの影 */
+  -webkit-box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.top-panel .smb-panels__item:hover {
+  /* 標準であるホバーエフェクトの除去 */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top-panel .smb-panels__item__body {
+  /* 標準のh2装飾の除去 */
+  padding: 80px;
+}
+
+.top-panel .smb-panels__item__body h2 {
+  background-color: transparent;
+  border-left: none;
+}
+
+@media (max-width: 1023px) {
+  /******************************************************************
+
+Stylesheet: 1023px以下（タブレット）で適用
+
+******************************************************************/
+  /* ヒーロースライダー */
+  .hero__title h2 {
+    font-size: 32px;
+  }
+  .hero .swiper-slide {
+    height: 80vh;
+  }
+  /* タブレット以下でパネルの画像の重なりをなくす */
+  .top-panel {
+    margin-top: 30px;
+    -webkit-transform: none;
+            transform: none;
+    /* パネルの影を調節 */
+  }
+  .top-panel .smb-panels__item {
+    -webkit-box-shadow: 10px 0 -10px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 0 -10px rgba(0, 0, 0, 0.2);
+  }
+  .top-panel .smb-panels__item__body {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 639px) {
+  /******************************************************************
+
+Stylesheet: 639px以下(スマホ)で適用
+
+******************************************************************/
+  /* ヒーロースライダー */
+  .hero__title {
+    top: 15%;
+  }
+  .hero__title h2 {
+    font-size: 24px;
+  }
+  .hero__btn {
+    bottom: 20%;
+  }
+  .hero__btn a {
+    /* ボタンのサイズを小さく */
+    width: 180px;
+    height: 45px;
+  }
+  /* 3つ並んだパネル */
+  .panels {
+    /* パネルの余白追加 */
+  }
+  .panels .c-row__col {
+    padding: 0 14px;
+  }
+  /* ボタン */
+  .btn .smb-btn {
+    width: 180px;
+    height: 45px;
+    margin-top: 30px;
+  }
+  /* 任意のタクソノミーの投稿（リッチメディア）のスタイル（スマホ） */
+  .c-entries--rich-media .c-entries__item:nth-of-type(-n + 5) {
+    /* 6番目を除く */
+    margin-bottom: 30px;
+  }
+  .c-entries--rich-media .c-entry-summary__content {
+    /* スマホでテキスト除去 */
+    display: none;
+  }
+  /* フッター */
+  .info-inner {
+    display: block;
+    text-align: center;
+    height: auto;
+    padding: 40px;
+  }
+  .info__logo {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .info__logo img {
+    width: 120px;
+  }
+  .info__text {
+    margin-bottom: 25px;
+  }
+}

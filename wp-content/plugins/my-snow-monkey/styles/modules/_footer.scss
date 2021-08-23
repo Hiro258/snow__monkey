@@ -1,0 +1,38 @@
+/* フッターの上 */
+.info {
+    /* フッター上部にボーダー */
+    border-top: 1px solid #ccc;
+  
+    &-inner {
+      display: flex;
+      align-items: center;
+      max-width: 1180px;
+      height: 130px;
+    }
+  
+    &__logo {
+      margin-right: 30px;
+  
+      img {
+        width: 150px;
+      }
+    }
+  
+    &__text {
+      flex: 1;
+      font-size: 14px;
+    }
+  
+    .social-nav {
+      margin-left: 0;
+      &__icon {
+        display: inline;
+        margin: 0 10px;
+        list-style: none;
+  
+        a {
+          color: #212121;
+        }
+      }
+    }
+  }

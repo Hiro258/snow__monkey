@@ -1,0 +1,80 @@
+/******************************************************************
+
+Stylesheet: 639px以下(スマホ)で適用
+
+******************************************************************/
+/* ヒーロースライダー */
+.hero {
+    &__title {
+      top: 15%;
+  
+      h2 {
+        font-size: 24px;
+      }
+    }
+  
+    &__btn {
+      bottom: 20%;
+  
+      a {
+        /* ボタンのサイズを小さく */
+        width: 180px;
+        height: 45px;
+      }
+    }
+  }
+
+  /* 3つ並んだパネル */
+.panels {
+    /* パネルの余白追加 */
+    .c-row__col {
+      padding: 0 14px;
+    }
+  }
+
+  /* ボタン */
+.btn {
+    .smb-btn {
+      width: 180px;
+      height: 45px;
+      margin-top: 30px;
+    }
+  }
+
+  /* 任意のタクソノミーの投稿（リッチメディア）のスタイル（スマホ） */
+.c-entries--rich-media {
+  .c-entries__item {
+    &:nth-of-type(-n + 5) {
+      /* 6番目を除く */
+      margin-bottom: 30px;
+    }
+  }
+
+  .c-entry-summary__content {
+    /* スマホでテキスト除去 */
+    display: none;
+  }
+}
+
+/* フッター */
+.info {
+  &-inner {
+    display: block;
+    text-align: center;
+    height: auto;
+    padding: 40px;
+  }
+
+  &__logo {
+    margin-right: 0;
+    margin-bottom: 25px;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+}

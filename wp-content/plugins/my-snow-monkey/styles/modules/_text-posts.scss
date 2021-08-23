@@ -1,0 +1,81 @@
+/* 最近の投稿（テキスト）のスタイル */
+.c-entries--text {
+    position: relative;
+    background-color: #f9f9f9;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+  
+    .c-entries__item {
+      a {
+      padding-right: 2em;
+      padding-left: 2em;
+      }
+  
+      .c-entry-summary {
+        position: relative;
+        display: flex;
+  
+        &__title {
+          transition: color 0.3s;
+        }
+  
+        &__figure {
+          display: block;
+          position: absolute;
+          top: -2px;
+          left: 6em; /* 日付の長さに合わせて調整 */
+          background-color: transparent;
+  
+          img,
+          &::before {
+            display: none;
+          }
+  
+          span {
+            background-color: #fff;
+            border-radius: 15px;
+          }
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-7 {
+          color: #333;
+          border: 1px solid #333;
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-4 {
+          color: #cd162c;
+          border: 1px solid #cd162c;
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-5 {
+          color: #104f96;
+          border: 1px solid #104f96;
+        }
+  
+        /* 作成したカテゴリーIDによって末尾の番号が変わります */
+        &__term--category-3 {
+          color: #e97501;
+          border: 1px solid #e97501;
+        }
+  
+        &__term {
+          position: relative;
+          left: 0;
+          white-space: nowrap;
+        }
+  
+        &__meta {
+          margin-right: 10rem; /* カテゴリー名の長さにあわせて調整 */
+        }
+      }
+  
+      &:hover {
+        .c-entry-summary__title {
+          color: #cd162c;
+        }
+      }
+    }
+  }

@@ -1,0 +1,159 @@
+/* *****************************************************************
+
+Stylesheet: ベーススタイル（全て）に適応
+
+******************************************************************/
+
+
+
+  /* 3枚並んだパネルの装飾 */
+.panels {
+    .c-row__col {
+      /* パネルの余白除去 */
+      padding: 0;
+    }
+  
+    .smb-panels__item {
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+      padding: 0;
+  
+      &__figure {
+        /* テキストと画像の位置変更 */
+        position: relative;
+        order: 2;
+        overflow: hidden;
+  
+        &::before {
+          /* ホバー時の装飾 */
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          content: '新しい暮らしを始めたい方\Aのためのリフォーム\A\A老後のために暮らしやすい\Aバリアフリーの住宅\A\A未来を創造し作り上げられる\A Billion自慢の住宅設計';
+          white-space: pre;
+          background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+          color: #fff;
+          font-size: 13px;
+          transition: all 0.6s 70ms;
+          opacity: 0;
+          z-index: 1;
+        }
+  
+        img {
+          /* 変化の時間 */
+          transition: all 0.6s;
+        }
+      }
+  
+      &__body {
+        /* パネルのボーダー部分 */
+        box-shadow: 0 0 0 1px #ccc;
+        /* パネルのテキストと画像の順序を変更*/
+        order: 1;
+      }
+  
+      &__title {
+        font-size: 24px;
+      }
+  
+      &__content {
+        font-size: 14px;
+      }
+  
+      /* パネルホバー時の装飾 */
+      &:hover {
+        .smb-panels__item__figure {
+          &::before {
+            /* ホバー時に文字浮き出して見えるようにscaleで拡大 */
+            transform: scale(1.4);
+            opacity: 1;
+          }
+  
+          img {
+            /* ホバー時に画像を拡大 */
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+
+  .smb-section__title {
+    /* セクションタイトルサイズ変更 */
+    font-size: 2.5em;
+  
+    &::after {
+      /* 標準であるセクションタイトルの下線除去 */
+      display: none;
+    }
+  }
+
+  /* バナーの装飾 */
+.banners {
+    .smb-items__banner {
+      &__figure {
+        /* デフォルトのfilterの除去 */
+        filter: none !important;
+  
+        img {
+          /* 常時filterをかける */
+          filter: brightness(0.8);
+        }
+      }
+  
+      &__body {
+        /* 変化にかける時間 */
+        transition: transform 0.3s;
+      }
+  
+      &__title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+  
+      &__lede {
+        font-size: 16px;
+      }
+  
+      &:hover {
+        .smb-items__banner__body {
+          /* ホバー時に文字を右に移動 */
+          transform: translateX(15px);
+        }
+      }
+    }
+  }
+
+  /* TOPのパネル */
+.top-panel {
+    /* 位置調整 */
+    position: relative;
+    transform: translateY(-100px);
+    z-index: 1;
+  
+    .smb-panels__item {
+      /* パネルの影 */
+      box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.1) !important;
+  
+      &:hover {
+        /* 標準であるホバーエフェクトの除去 */
+        box-shadow: none;
+      }
+  
+      &__body {
+        /* 標準のh2装飾の除去 */
+        padding: 80px;
+  
+        h2 {
+         background-color: transparent;
+         border-left: none;
+        }
+      }
+    }
+  }

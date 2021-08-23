@@ -1,0 +1,32 @@
+/* ヘッダー */
+/* グローバルメニュー位置調整 */
+.l-header {
+    .c-navbar {
+      &__item {
+        position: relative;
+  
+        &::after {
+          /* メニューアイテムの左に区切り線 */
+          content: '';
+          position: absolute;
+          top: 50%;
+          display: block;
+          height: 30px;
+          margin-top: -15px;
+          border-right: 1px solid #ccc;
+        }
+        
+        &:last-of-type::before {
+          /* 最後のメニューアイテムの右に区切り線 */
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          display: block;
+          height: 30px;
+          margin-top: -15px;
+          border-right: 1px solid #ccc;
+        }
+      }
+    }
+  }
